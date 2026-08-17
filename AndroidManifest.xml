@@ -10,15 +10,10 @@
     <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <!-- 存储权限：区分 Android 版本 -->
-    <!-- Android 12 (API 32) 及以下 -->
-    <uses-permission 
-        android:name="android.permission.READ_EXTERNAL_STORAGE" 
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
-    <!-- Android 13 (API 33) 及以上 -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-
-    <!-- 【已移除】ACCESS_MEDIA_LOCATION：身份证识别不需要位置信息 -->
-    <!-- 【已移除】usesCleartextTraffic：腾讯云使用 HTTPS，无需明文流量 -->
 
     <application
         android:allowBackup="true"
@@ -28,6 +23,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+
+        <!-- FileProvider 用于 Android 7.0+ 拍照 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
         <activity
             android:name=".MainActivity"
