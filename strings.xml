@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">身份证识别</string>
+
+    <!-- 按钮文本 -->
+    <string name="take_photo">拍照</string>
+    <string name="select_image">选择图片</string>
+    <string name="recognize">识别身份证</string>
+    <string name="back">返回</string>
+
+    <!-- 提示信息 -->
+    <string name="please_select_image">请先选择身份证图片</string>
+    <string name="photo_save_failed">拍照保存失败</string>
+    <string name="image_load_failed">图片加载失败</string>
+    <string name="config_missing">请先配置腾讯云密钥</string>
+    <string name="recognition_failed">识别失败: %s</string>
+    <string name="no_result">未收到识别结果</string>
+    <string name="parse_error">解析失败: %s</string>
+    <string name="response_format_error">响应格式错误</string>
+    <string name="permission_denied">需要相机权限才能拍照</string>
+    <string name="permission_granted">相机权限已授予</string>
+
+    <!-- 结果标签 -->
+    <string name="label_name">姓名：</string>
+    <string name="label_gender">性别：</string>
+    <string name="label_nation">民族：</string>
+    <string name="label_birth">出生日期：</string>
+    <string name="label_address">地址：</string>
+    <string name="label_id_number">身份证号：</string>
+    <string name="title_result">身份证识别结果</string>
 </resources>
