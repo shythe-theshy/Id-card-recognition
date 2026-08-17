@@ -15,25 +15,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="身份证识别"
+            android:text="@string/title_result"
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="识别结果"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:layout_marginBottom="16dp" />
-
         <!-- 姓名 -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="姓名："
+            android:text="@string/label_name"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
         <TextView
@@ -47,7 +39,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="性别："
+            android:text="@string/label_gender"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
         <TextView
@@ -61,7 +53,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="民族："
+            android:text="@string/label_nation"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
         <TextView
@@ -75,7 +67,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="出生日期："
+            android:text="@string/label_birth"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
         <TextView
@@ -89,7 +81,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="地址："
+            android:text="@string/label_address"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
         <TextView
@@ -103,7 +95,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="身份证号："
+            android:text="@string/label_id_number"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
         <TextView
@@ -117,7 +109,7 @@
             android:id="@+id/btnBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="返回" />
+            android:text="@string/back" />
 
     </LinearLayout>
 </ScrollView>
