@@ -27,4 +27,8 @@
     <string name="label_address">地址：</string>
     <string name="label_id_number">身份证号：</string>
     <string name="title_result">身份证识别结果</string>
+
+    <string name="unknown_error">未知错误</string>
+    <string name="error_prefix">错误: %s</string>
+    <string name="not_recognized">未识别</string>
 </resources>
